@@ -1,0 +1,318 @@
+@font-face {
+    font-family: canela;
+    src: url("../../fonts/canela-light.woff2");
+
+    /* 영어제목  */
+}
+
+@font-face {
+    font-family: hurme;
+    src: url("../../fonts/hurme-regular.woff2");
+
+    /* 영어본문  */
+}
+
+@font-face {
+    font-family: NanumMyeongjo;
+    src: url("../../fonts/NanumMyeongjo-Regular.ttf");
+
+    /* 한글제목  */
+}
+
+@font-face {
+    font-family: MalgunGothic;
+    src: url("../../fonts/MalgunGothic.eot");
+
+    /* 한글본문  */
+}
+
+html, body {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    // list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: MalgunGothic;
+    background-color: #0c0c0c;
+}
+
+a {
+    text-decoration: none;
+}
+
+$dark: #0c0c0c;
+$main_c: #aa8768;
+
+%text_de {
+    text-decoration: none;
+}
+
+@mixin font($a, $b, $c) {
+    font-family: $a;
+    font-size: #{$b}px;
+    color: $c;
+}
+header.active{  background-color: rgba(0, 0, 0, 0.5);}
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+  
+
+    h1 {
+        position: absolute;
+        width: 200px;
+        left: 10vw;
+        top: 1vw;
+
+        @extend %text_de;
+
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .menu-trigger {
+        width: 30px;
+        height: 20px;
+        position: fixed;
+        top: 3vw;
+        right: 10vw;
+
+        span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+        }
+
+        span:nth-of-type(1) {
+            top: 0;
+        }
+
+        span:nth-of-type(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        span:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+
+    .menu-trigger.active {
+        transform: rotate(90deg);
+
+        span {
+            background: $main_c;
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: url("../img/menu.png") no-repeat;
+    background-size: 40%;
+    background-color: $dark;
+    background-position: right bottom;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+
+    ul {
+        li {
+            display: block;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            padding-left: 130%;
+
+            a {
+                padding: 15px 30px;
+
+                @include font(canela, 24, #fff);
+
+                @extend %text_de;
+            }
+        }
+    }
+}
+
+.nav.active {
+    transform: translateX(0%);
+}
+
+
+
+
+footer {
+    padding: 100px 0;
+    margin: 0 auto;
+    background-color: #000;
+    height: auto;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+
+
+        .f_1 {
+            p {}
+
+            a {
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        .f_2 {position: relative;
+            p {
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                a {
+                   
+                    text-decoration: none;
+
+                    @include font(Canela, 24, #fff);
+
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.25;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        .f_2::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: -31%;
+            bottom: 0;
+            left: 1%;
+            height: 500px;
+            border-left: 1px solid #444;
+        }
+
+        .f_3 {position: relative;
+            padding-top: 280px;
+            padding-right: 80px;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    width: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .f_3::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: -31%;
+            bottom: 0;
+            left: -28%;
+            
+            height: 500px;
+            border-left: 1px solid #444;
+        }
+
+        .f_4 {position: relative;
+            p {}
+
+            h2 {
+                @include font(Canela, 28, #fff);
+
+                white-space: pre-line;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: 2px;
+            }
+           
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include font(Hurme, 10, #989898);
+
+                font-weight: 600;
+                margin-top: 42px;
+                width: 193px;
+                height: 48px;
+                background-color: #2d2d2d;
+                line-height: 1.6;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 0 24px;
+                text-decoration: none;
+                i{ transform: translateX(-5px);
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+            }
+
+            a:hover{
+                background-color: #fff;
+                color: #2d2d2d;
+                transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            }
+            a:hover i{
+                transform: translateX(50%);
+                transition: 1s;
+                color: #2d2d2d;
+            }
+            
+        }
+        .f_4::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: -31%;
+            bottom: 0;
+            left: -5%;
+            height: 500px;
+            border-left: 1px solid #444;
+        }
+        .f_main {
+            @include font(hurme, 11, #aa8768);
+
+            font-weight: 600;
+            line-height: 1.45;
+            letter-spacing: 2px;
+            margin-bottom: 32px;
+        }
+    }
+}

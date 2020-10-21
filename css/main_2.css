@@ -1,0 +1,530 @@
+@import url("common.css");
+main {
+  margin: 0 auto;
+  background: #0c0c0c;
+  /* 1 summary */
+  /* 2 who*/
+  /* 3 tena */
+  /* 4 */
+  /* 5 */
+  /* 6 SYNOPSIS*/
+  /* side_le */
+}
+
+main .summary {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main .summary p {
+  background-image: url(../img/main_2/ba1.jpg);
+  background-size: cover;
+  background-color: transparent;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .2;
+}
+
+main .summary .sum_font {
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+}
+
+main .summary .sum_font h2 {
+  font-family: NanumMyeongjo;
+  font-size: 100px;
+  color: #aa8768;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 300;
+  line-height: normal;
+}
+
+main .summary svg {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  text-align: center;
+  width: 100%;
+  width: 8px;
+  height: 38px;
+}
+
+main .summary svg path {
+  stroke-dashoffset: 0px;
+  stroke-dasharray: 0px;
+  -webkit-animation: aa 2s infinite;
+          animation: aa 2s infinite;
+}
+
+@-webkit-keyframes aa {
+  100% {
+    stroke-dashoffset: 100px;
+    stroke-dasharray: 90px;
+  }
+}
+
+@keyframes aa {
+  100% {
+    stroke-dashoffset: 100px;
+    stroke-dasharray: 90px;
+  }
+}
+
+main .summary .back {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  padding-left: 35px;
+}
+
+main .summary .back a {
+  position: relative;
+  text-decoration: none;
+}
+
+main .summary .back a div {
+  font-family: Hurme;
+  font-size: 11px;
+  color: #989898;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main .summary .back a div i {
+  padding-bottom: 10px;
+}
+
+main .summary .back a::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 26px;
+  height: 1px;
+  background-color: #989898;
+  -webkit-transform: rotate(90deg) translateX(-100%);
+          transform: rotate(90deg) translateX(-100%);
+}
+
+main .who {
+  width: 80%;
+  margin: 0 auto;
+  padding: 175px 0;
+  text-align: center;
+  white-space: pre-line;
+}
+
+main .who .who_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .who .who_top p {
+  font-family: Hurme;
+  font-size: 11px;
+  color: #aa8768;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 1.33;
+  letter-spacing: 2px;
+}
+
+main .who .who_top h2 {
+  margin-top: 40px;
+  margin-bottom: 112px;
+  font-family: MalgunGothic;
+  font-size: 42px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+main .who div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .who div .who_le {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .who div .who_le h2 {
+  font-family: MalgunGothic;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+main .who div .who_le p {
+  margin-top: 80px;
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #808080;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.2;
+  letter-spacing: normal;
+}
+
+main .who div .who_ri {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .who div .who_ri h2 {
+  font-family: MalgunGothic;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+main .who div .who_ri p {
+  margin-top: 80px;
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #808080;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.2;
+  letter-spacing: normal;
+}
+
+main .tena {
+  white-space: pre-line;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .tena .tena_le {
+  margin-top: 60px;
+}
+
+main .tena .tena_le span {
+  font-family: Hurme;
+  font-size: 11px;
+  color: #aa8768;
+  display: inline-block;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+}
+
+main .tena .tena_le ul {
+  margin-top: -40px;
+  padding: 0;
+  display: inline-block;
+  list-style-type: disc !important;
+}
+
+main .tena .tena_le ul li {
+  font-family: MalgunGothic;
+  font-size: 14px;
+  color: #808080;
+  margin-left: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+main .tena .tena_le ul li:first-child {
+  font-family: NanumMyeongjo;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  list-style: none;
+  margin: 0;
+}
+
+main .tena .tena_ri {
+  width: 528px;
+  height: 724px;
+}
+
+main .tena .tena_ri img {
+  width: 100%;
+  height: 100%;
+}
+
+main .star {
+  margin: 300px 0;
+  height: 200px;
+}
+
+main .star img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main_5 {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: pre-line;
+}
+
+main .main_5 .main_5_le {
+  width: 600px;
+  height: 495px;
+}
+
+main .main_5 .main_5_le img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main_5 .main_5_ri {
+  margin-left: 80px;
+}
+
+main .main_5 .main_5_ri p {
+  font-family: Hurme;
+  font-size: 12px;
+  color: #aa8768;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 2px;
+}
+
+main .main_5 .main_5_ri ul {
+  margin-top: -40px;
+  padding: 0;
+  display: inline-block;
+  list-style-type: disc !important;
+}
+
+main .main_5 .main_5_ri ul li {
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #808080;
+  margin-left: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+main .main_5 .main_5_ri ul li:first-child {
+  font-family: NanumMyeongjo;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  list-style: none;
+  margin: 0;
+}
+
+main .main_5 .main_5_ri ul li:last-child {
+  list-style: none;
+  text-align: right;
+}
+
+main .main_5 .main_5_ri div {
+  width: 400px;
+}
+
+main .main_5 .main_5_ri div img {
+  width: 100%;
+}
+
+main .story {
+  position: relative;
+  margin-top: 200px;
+  height: 969px;
+}
+
+main .story img {
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+}
+
+main .story .story_1 {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  white-space: pre-line;
+}
+
+main .story .story_1 span {
+  font-family: Hurme;
+  font-size: 12px;
+  color: #aa8768;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.33;
+  letter-spacing: 2px;
+}
+
+main .story .story_1 h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-family: Canela;
+  font-size: 37px;
+  color: #fff;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+main .story .story_1 p {
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #b2b2b2;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 2;
+  letter-spacing: normal;
+  padding: 10px 0;
+}
+
+main .story .btn {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  bottom: -28px;
+  background-color: rgba(170, 135, 104, 0.8);
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  border-radius: 50%;
+  margin: auto;
+}
+
+main .story .btn img {
+  width: 10px;
+  height: 28px;
+  opacity: .4;
+  padding-top: 10px;
+}
+
+main .side_le {
+  position: fixed;
+  z-index: 2;
+  top: calc(90px + 90 * ((100vw - 320px) / 1600));
+  opacity: 1;
+  right: calc(25px + 55 * ((100vw - 320px) / 1600));
+}
+
+main .side_le .side_le_1 {
+  position: relative;
+  font-family: Hurme;
+  font-size: 10px;
+  color: #aa8768;
+  margin-left: -7.5px;
+  margin-bottom: 15px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 6px;
+}
+
+main .side_le .side_le_2 {
+  position: absolute;
+  z-index: 2;
+  width: 1px;
+  height: 220px;
+  background-color: rgba(102, 102, 102, 0.5);
+}
+
+main .side_le .side_le_2 span {
+  width: 3px;
+  height: 48px;
+  background-color: #aa8768;
+  margin-left: -1px;
+  display: block;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=main_2.css.map */

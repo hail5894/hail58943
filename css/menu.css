@@ -1,0 +1,135 @@
+@import url("common.css");
+main {
+  margin: 0 auto;
+  background: #0c0c0c;
+  /* 1 summary */
+}
+
+main .summary {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+main .summary .our_world {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  font-family: hurme;
+  font-size: 12px;
+  color: #aa8768;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+main .summary .our_world::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  width: 1px;
+  height: 40px;
+  background-color: #aa8768;
+}
+
+main .summary .sum_meu .menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  min-height: 100%;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../img/menu/ba1.jpg");
+}
+
+main .summary .sum_meu .menu .me_1:hover div p:nth-of-type(2) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .summary .sum_meu .menu .me_1 {
+  position: relative;
+  max-width: calc(33.3333%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  cursor: pointer;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33.3333%);
+          flex: 0 0 calc(33.3333%);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+main .summary .sum_meu .menu .me_1 div {
+  width: 50%;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+main .summary .sum_meu .menu .me_1 div h2 {
+  font-family: canela;
+  font-size: 40px;
+  color: #e7e5e5;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+main .summary .sum_meu .menu .me_1 div p {
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #808080;
+  font-weight: 100;
+  font-family: Hurme;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 1.71;
+  letter-spacing: normal;
+  white-space: pre-line;
+  margin-top: 60px;
+}
+
+main .summary .sum_meu .menu .me_1 div p:nth-of-type(2) {
+  font-family: Hurme;
+  font-size: 10px;
+  color: #aa8768;
+  font-family: Hurme;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30%;
+}
+/*# sourceMappingURL=menu.css.map */

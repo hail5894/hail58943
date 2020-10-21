@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url("common.css");
+
+$dark: #0c0c0c;
+$main_c: #aa8768;
+$white: #fff;
+
+%text_de {
+    text-decoration: none;
+}
+
+@mixin font($a, $b, $c) {
+    font-family: $a;
+    font-size: #{$b}px;
+    color: $c;
+}
+
+main {
+    padding-top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/menu_3.png) no-repeat;
+    background-size: 300px;
+    background-color: #0c0c0c;
+    background-position: right bottom;
+    overflow: hidden;
+
+    .casting {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+
+        .fixing {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+
+            .cas_1 {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                margin: 0 auto;
+                padding: 0 4%;
+
+                .jang_1 {
+                    .photo {
+                        position: relative;
+
+                        .img {
+                            width: 329px;
+                            height: 420px;
+                            display: inline-block;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .name {
+                            position: absolute;
+                            right: 34%;
+                            top: 10%;
+                            
+                            z-index: 4;
+
+                            @include font(MalgunGothic, 30, #eee);
+
+                            span {
+                                @include font(hurme, 28, #eee);
+                                display: block;
+                                margin-top: 20px;
+
+                                width: 20px;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .cast {
+                            position: absolute;
+                            left: -10%;
+                            top: 50%;
+
+                            img {
+                                width: 100%;
+                                margin-top: 16px;
+                            }
+
+                            p {
+                                @include font(hurme, 11, $main_c);
+
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                text-align: left;
+                                line-height: 1.33;
+                                letter-spacing: 2px;
+                                margin: 4px 0;
+                                position: relative;
+
+                                span {
+                                    display: block;
+                                    border-bottom: 2px solid $main_c;
+                                    margin: -8px auto;
+                                    width: 100%;
+                                    position: absolute;
+                                    bottom: 0%;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .explan {
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 10%;
+                        margin-left: 7%;
+                        width: 600px;
+
+
+                        p {
+                            display: inline-block;
+                           
+                            @include font(MalgunGothic, 13, #808080);
+
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            text-align: left;
+                            line-height: 2em;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+
+           /*  .cas_1:nth-of-type(1) {
+                left: 0%;
+            }
+
+            .cas_1:nth-of-type(2) {
+                left: 100%;
+            }
+
+            .cas_1:nth-of-type(3) {
+                left: 200%;
+            }
+
+            .cas_1:nth-of-type(4) {
+                left: 300%;
+            }
+
+            .cas_1:nth-of-type(5) {
+                left: 400%;
+            }
+
+            .cas_1:nth-of-type(6) {
+                left: 500%;
+            } */
+        }
+    }
+}

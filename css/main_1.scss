@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+@import url("common.css");
+
+$dark: #0c0c0c;
+$main_c: #aa8768;
+$white: #fff;
+
+%text_de {
+    text-decoration: none;
+}
+
+@mixin font($a, $b, $c) {
+    font-family: $a;
+    font-size: #{$b}px;
+    color: $c;
+}
+
+main {
+    margin: 0 auto;
+    background: $dark;
+
+    /* 1 summary */
+    .summary {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        p {
+            background-image: url(../img/main_1/ba1.jpg);
+            background-size: cover;
+            background-color: transparent;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: .2;
+        }
+
+        .sum_font {
+            position: absolute;
+            left: 0%;
+            top: 40%;
+            text-align: center;
+            width: 100%;
+
+            h2 {
+                @include font(NanumMyeongjo, 100, $main_c);
+
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                max-width: 100%;
+                text-align: center;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        svg {
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            text-align: center;
+            width: 100%;
+            width: 8px;
+            height: 38px;
+
+            path{
+                stroke-dashoffset: 0px;
+                stroke-dasharray : 0px;
+                animation: aa 2s infinite;
+            }
+
+            @keyframes aa {
+                100%{
+                    stroke-dashoffset: 100px;
+                    stroke-dasharray: 90px;   
+                }
+            }
+        }
+
+        .back {
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            transform: translate(0px, -50%);
+            transform: rotate(270deg);
+            padding-left: 35px;
+
+            a {
+                position: relative;
+                text-decoration: none;
+
+                div {
+                    @include font(Hurme, 11, #989898);
+
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    i {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+            a::before {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0;
+                width: 26px;
+                height: 1px;
+                background-color: rgb(152, 152, 152);
+                transform: rotate(90deg) translateX(-100%);
+            }
+        }
+    }
+
+    /* 2 who*/
+    .who {
+        width: 80%;
+        margin: 0 auto;
+        padding: 175px 0;
+        text-align: center;
+        white-space: pre-line;
+
+        .who_top {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                @include font(Hurme, 11, $main_c);
+
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                text-align: center;
+                line-height: 1.33;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                margin-top: 40px;
+                margin-bottom: 112px;
+
+                @include font(MalgunGothic, 42, $white);
+
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: center;
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+
+            .who_le {
+                flex-direction: column;
+
+                h2 {
+                    @include font(MalgunGothic, 20, $white);
+
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 80px;
+
+                    @include font(MalgunGothic, 13, #808080);
+
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 2.2;
+                    letter-spacing: normal;
+                }
+            }
+
+            .who_ri {
+                flex-direction: column;
+
+                h2 {
+                    @include font(MalgunGothic, 20, $white);
+
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 80px;
+
+                    @include font(MalgunGothic, 13, #808080);
+
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 2.2;
+                    letter-spacing: normal;
+                }
+            }
+        }
+    }
+
+    /* 3 tena */
+    .tena {
+        white-space: pre-line;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+
+        .tena_le {
+            margin-top: 60px;
+
+            span {
+                @include font(Hurme, 11, $main_c);
+
+                display: inline-block;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                text-align: left;
+                line-height: 1.33;
+                letter-spacing: 2px;
+                margin-bottom: 32px;
+            }
+
+            div {
+                h2 {
+                    @include font(NanumMyeongjo, 26, #e7e5e5);
+
+                    margin-bottom: 33px;
+                }
+
+                p {
+                    @include font(MalgunGothic, 14, #808080);
+
+                    line-height: 2;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                }
+            }
+
+            div:nth-of-type(2) {
+                margin-top: 30px;
+            }
+        }
+
+        .tena_ri {
+            width: 528px;
+            height: 724px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    /* 4 */
+    .star {
+        margin: 300px 0;
+        height: 200px;
+       
+        img {
+            width: 100%;
+            height: 100%;
+        
+        }
+    }
+
+    /* 5 */
+    .main_5 {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        white-space: pre-line;
+
+        .main_5_le{
+            width: 600px;
+            height: 495px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .main_5_ri {
+            margin-left: 80px;
+           
+            p {
+                @include font(Hurme, 12, $main_c);
+
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: 2px;
+            }
+
+            ul {
+                margin-top: -40px;
+                padding: 0;
+                display: inline-block;
+                list-style-type: disc !important;
+
+                li {
+                    @include font(MalgunGothic, 12, #808080);
+
+                    margin-left: 30px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    text-align: left;
+                    line-height: 2;
+                    letter-spacing: normal;
+                }
+
+                li:first-child {
+                    @include font(NanumMyeongjo, 24, $white);
+
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.4;
+                    letter-spacing: normal;
+                    list-style: none;
+                    margin: 0;
+                }
+            }
+
+            div {
+                margin-left: 30px;
+
+                img {}
+            }
+        }
+    }
+
+    /* 6 SYNOPSIS*/
+    .story {
+        position: relative;
+        margin-top: 200px;
+        height: 969px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: .4;
+
+        }
+
+        .story_1 {
+            
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            white-space: pre-line;
+
+            span {
+                @include font(Hurme, 12, $main_c);
+
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                text-align: left;
+                line-height: 1.33;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                margin-top: 32px;
+                margin-bottom: 12px;
+
+                @include font(Canela, 37, $white);
+
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+            }
+
+            p {@include font(MalgunGothic, 13, #b2b2b2);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                text-align: left;
+                line-height: 2;
+                letter-spacing: normal;
+                padding: 10px 0;
+            }
+        }
+     
+    }
+
+    /* btn */
+    .bt{
+        position: relative;
+        .btn {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            bottom: -28px;
+            background-color: rgba(170, 135, 104, 0.8);
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            border-radius: 50%;
+            margin: auto;
+
+            img {
+                width: 10px;
+                height: 28px;
+                opacity: .4;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    /* side_le */
+    .side_le {
+        position: fixed;
+        z-index: 2;
+        top: calc(90px + 90 * ((100vw - 320px) / 1600));
+        opacity: 1;
+        right: calc(25px + 55 * ((100vw - 320px) / 1600));
+
+        .side_le_1 {
+            position: relative;
+
+            @include font(Hurme, 10, #aa8768);
+
+            margin-left: -7.5px;
+            margin-bottom: 15px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            transform-origin: center center;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: 6px;
+        }
+
+        .side_le_2 {
+            position: absolute;
+            z-index: 2;
+            width: 1px;
+            height: 220px;
+            background-color: rgba(102, 102, 102, 0.5);
+
+            span {
+                width: 3px;
+                height: 48px;
+                background-color: $main_c;
+                margin-left: -1px;
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+}
