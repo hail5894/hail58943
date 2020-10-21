@@ -44,6 +44,7 @@
 
 $(function() {
     //start
+
     $('.cas_1').not(':first').hide();
     var idx = 0;
     var loop;
@@ -58,12 +59,20 @@ $(function() {
         $('.cas_1').eq(idx).fadeIn(700);
     }    
 
+
+
+   
     
+   
+
     function fadeM(e){
         $('.cas_1').eq(idx).fadeOut(700);
         if(e.originalEvent.wheelDelta < 0){idx++;}else{idx--;}
         update();
         $('.cas_1').eq(idx).fadeIn(700);
+      
+       
+       
     }    
     //idx setting
     function update(){

@@ -44,7 +44,7 @@ main {
             width: 100%;
 
             h2 {
-                @include font(NanumMyeongjo, 100, $main_c);
+                @include font(hurme, 160, $main_c);
 
                 font-stretch: normal;
                 font-style: normal;
@@ -453,7 +453,8 @@ main {
         z-index: 2;
         top: calc(90px + 90 * ((100vw - 320px) / 1600));
         opacity: 1;
-        right: calc(25px + 55 * ((100vw - 320px) / 1600));
+        transition: .5s;
+        /* right: calc(25px + 55 * ((100vw - 320px) / 1600)); */
 
         .side_le_1 {
             position: relative;
@@ -476,7 +477,7 @@ main {
             position: absolute;
             z-index: 2;
             width: 1px;
-            height: 220px;
+            height: 180px;
             background-color: rgba(102, 102, 102, 0.5);
 
             span {
@@ -485,7 +486,7 @@ main {
                 background-color: $main_c;
                 margin-left: -1px;
                 display: block;
-                margin-top: 20px;
+                /* margin-top: 20px; */
             }
         }
     }

@@ -31,7 +31,7 @@ main {
             position: absolute;
             top: 20%;
             left: 0%;
-
+            z-index: 100;
             @include font(hurme, 12, #aa8768);
 
             font-weight: 600;
@@ -66,7 +66,7 @@ main {
                 z-index: 3;
                 display: flex;
                 justify-content: space-between;
-
+       
                 background-image: url('../img/menu/ba1.jpg');
         
                 .me_1:hover div p:nth-of-type(2){
@@ -88,14 +88,19 @@ main {
                     border-right: 1px solid rgba(255, 255, 255, 0.1);
                     text-decoration: none;
 
-
+                    div:hover h2{
+                            transform: scale(1.5);
+                            opacity: 1;
+                            transition: 1s; 
+                            @include font(canela, 40, #fff); 
+                    }
                     div {
                         width: 50%;
                         white-space: nowrap;
                         margin: 0 auto;
                         
                         h2 {
-                            @include font(canela, 40, #e7e5e5);
+                            @include font(canela, 40, #808080);
                             text-transform: uppercase;
 
                             font-weight: 300;
@@ -104,7 +109,7 @@ main {
                             letter-spacing: normal;
                             
                         }
-
+                     
                         p {
                             @include font(MalgunGothic, 13, #808080);
 

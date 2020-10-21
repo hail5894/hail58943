@@ -99,6 +99,7 @@ main {
                 font-weight: lighter;
                 padding-top: 15px;
                 font-size: 11px;
+    
             }
         }
 
@@ -380,10 +381,11 @@ main {
                 img {
                     width: 100%;
                     height: 100%;
-                    opacity: .4;
+                    opacity: .2;
                     font-size: 0;
                     line-height: 0;
                 }
+
 
                 div {
                     position: absolute;
@@ -391,18 +393,19 @@ main {
                     top: 30%;
                     left: 0%;
                     width: 100%;
-
+        
+                    
                     h2 {
-                        @include font(NanumMyeongjo, 43, #fff);
+                        @include font(canela, 43, #808080);
 
-                        font-weight: 300;
+                        font-weight: 400;
                         text-align: center;
                         line-height: 1.33;
                         letter-spacing: normal;
                     }
 
                     p {
-                        @include font(MalgunGothic, 13, #eee);
+                        @include font(MalgunGothic, 13, #808080);
 
                         font-weight: 100;
                         font-family: Hurme;
@@ -428,9 +431,24 @@ main {
                 }
             }
 
+            .me_1:hover p {
+                @include font(MalgunGothic, 13, #d6d3d3);
+            }
+
+
             .me_1:hover p:nth-of-type(2) {
                 transform: scale(1.2);
                 transition: .7s;
+            }
+
+            
+            .me_1:hover h2{
+                transform: scale(1.2);
+                opacity: 1;
+                transition: 1s; 
+                @include font(canela, 43, #eee); 
+              
+                text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
             }
         }
     }

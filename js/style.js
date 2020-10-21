@@ -135,7 +135,7 @@ $(function () {
 
     $('.me_1').mouseleave(function () {
         $(this).children('img').css({
-            'opacity': '.4',
+            'opacity': '.2',
             'transition': '.7s'
         });
 

@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+@import url("common.css");
+
+$dark: #0c0c0c;
+$main_c: #aa8768;
+$white: #fff;
+
+%text_de {
+    text-decoration: none;
+}
+
+@mixin font($a, $b, $c) {
+    font-family: $a;
+    font-size: #{$b}px;
+    color: $c;
+}
+
+main {
+     background: #1c1c1c;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  
+
+    /* 1 */
+    .who {
+        background: #000;
+        padding-top: 225px;
+        padding-bottom: 100px;
+
+        .who_top {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                @include font(Hurme, 11, $main_c);
+
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                text-align: center;
+                line-height: 1.33;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                margin-top: 40px;
+                margin-bottom: 40px;
+
+                @include font(MalgunGothic, 34, $white);
+
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: center;
+            }
+        }
+
+        .who_down_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            padding-bottom: 76px;
+            list-style-type: disc !important;
+
+            li {
+                @include font(MalgunGothic, 13, #808080);
+
+                margin-left: 30px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2;
+                letter-spacing: normal;
+            }
+        }
+
+        .who_down_2 {
+            text-align: center;
+            width: 80%;
+            height: 40px;
+            margin: 0 auto;
+            border-bottom: 1px solid #323232;
+
+            a {
+                @include font(Hurme, 11, $main_c);
+
+                text-decoration: none;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: 2px;
+
+                sub {
+                    vertical-align: super;
+                    font-weight: 400;
+                    font-size: 10px;
+                    padding-left: 5px;
+                }
+            }
+
+            // 아니면 hr대신 p의 에프터로 하던지
+       
+        }
+    }
+
+    /* 2 */
+    .main_2 {
+        background: url("../img/menu.png") no-repeat;
+        background-size: 500px;
+        background-position: right bottom;
+       
+        margin: 0 auto;
+        padding-bottom: 15%;
+        position: relative;
+
+        div { width: 60%;
+            margin: 0 auto;
+            margin-top: 100px;
+            transform: translateX(0%);
+            background-color: #eee;
+            padding: 5%;
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+
+            p {
+                white-space: pre-line;
+                line-height: 2em;
+
+                @include font(Hurme, 13, #000);
+
+                text-align: left;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 2px;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+     /* 2 */
+     .not {
+        background: #eee;
+        padding-bottom: 250px;
+        position: relative;
+      
+        &:before{
+            content:'';
+            display:block;
+            height:1px;
+        }
+        .h2{
+            position: absolute;
+            right: 43%;
+            bottom: 10%;
+            @include font(canela, 40, #2d2d2d);
+            text-transform: uppercase;
+            
+            font-weight: 600;
+        
+            line-height: 2;
+            letter-spacing: 4px;
+            padding-top: 10px;
+        }
+      
+        .not_main {
+            .not_main_1:nth-of-type(1).active{
+                opacity: 1; margin-top: -200px;
+                transition: 2.5s;
+            }
+
+            .not_main_1 {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width:  1182px;
+                margin: 0 auto;
+
+                height: 400px;
+                margin-top: 600px;
+                transition: 1s; opacity: 0;
+               
+            
+                .not_photo {
+                    cursor: pointer;
+                    flex-shrink: 0;
+                    position: relative;
+                    text-decoration: none;
+
+
+                   /*  animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 400ms; animation-iteration-count: 1; opacity: 1;  */
+     
+    
+                    span {
+                        width: 56px;
+                        height: 56px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $main_c;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 50%;
+                        top: 40%;
+                        display: none;
+    
+                        img {}
+                    }
+    
+                    .not_font{
+                        margin-left: 40px;
+                        margin-top: 60px;
+    
+                        p {
+                            width: 528px;
+                            height: 335px;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+                        ul {
+                            padding: 10px 30px;
+                            position: relative;
+                            z-index: 3;
+                            width: 400px;
+                            background-color: $white;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: -46px;
+                          
+    
+                            li {
+                                @include font(Hurme, 12, $main_c);
+                                list-style: none;
+    
+                                font-weight: 600;
+                                text-align: center;
+                                line-height: 2;
+                                letter-spacing: 4px;
+                                padding-top: 10px;
+    
+                                h2 {
+                                    @include font(canela, 22, #000);
+                                }
+                            }
+    
+                            li:last-child {
+                                color: #666666;
+                                font-weight: normal;
+                                font-size: 10px;
+                                margin-top: 10px;
+                               
+                            }
+                        }
+                    }
+                 
+                }
+            }
+        }
+
+        
+    }
+    .bt{
+        position: relative;
+      
+        .btn {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            bottom: -28px;
+            background-color: rgba(170, 135, 104, 0.8);
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            border-radius: 50%;
+            margin: auto;
+
+            img {
+                width: 10px;
+                height: 28px;
+                opacity: .4;
+                padding-top: 10px;
+            }
+        }
+
+       
+    }
+
+}

@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function () {
     liEle[0].classList.add('active');
     function fadeFun() {
         liEle.forEach(function (el, idx) {
-            if (el.offsetTop - winH < this.scrollY) {
+            if (el.offsetTop - winH< this.scrollY) {
                 //  console.log(el.offsetTop);
                 el.classList.add('active');
             }

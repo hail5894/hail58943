@@ -5,14 +5,16 @@ $(function () {
 
 
     $('.me_1').each(function (idx, el) {
-       
-        $(this).on('mouseenter', function () {
-            console.log($(this));
-            $(this).parent().css({
-                'background': "url(../img/menu/ba"+(idx+1)+".jpg)"
+        $(this).parent().css({
+            'transition':'.5s'
+        }); 
+        $(this).children('div').on('mouseenter', function () {
+          
+            $(this).parents('.menu').css({
+                'background': "url(../img/menu/ba"+(idx+1)+".jpg)",
+                'transition':'.5s'
             }); 
 
-           console.log(idx);
     });
 });
 

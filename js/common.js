@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 $(function ()  {
 
-    var $spotHeight =  $('svg').offset().top;
+    var $spotHeight =  $('svg, .who_top').offset().top;
     var top;
     function nav(){
         top = $(window).scrollTop();

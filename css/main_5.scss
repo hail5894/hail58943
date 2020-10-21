@@ -45,7 +45,7 @@ main {
             width: 100%;
 
             h2 {
-                @include font(hurme, 100, $main_c);
+                @include font(hurme, 160, $main_c);
 
                 font-stretch: normal;
                 font-style: normal;

@@ -1,0 +1,154 @@
+@import url("common.css");
+main {
+  padding-top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/menu_3.png) no-repeat;
+  background-size: 300px;
+  background-color: #0c0c0c;
+  background-position: right bottom;
+  overflow: hidden;
+}
+
+main .casting {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+main .casting .fixing {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /*  .cas_1:nth-of-type(1) {
+                left: 0%;
+            }
+
+            .cas_1:nth-of-type(2) {
+                left: 100%;
+            }
+
+            .cas_1:nth-of-type(3) {
+                left: 200%;
+            }
+
+            .cas_1:nth-of-type(4) {
+                left: 300%;
+            }
+
+            .cas_1:nth-of-type(5) {
+                left: 400%;
+            }
+
+            .cas_1:nth-of-type(6) {
+                left: 500%;
+            } */
+}
+
+main .casting .fixing .cas_1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo {
+  position: relative;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .img {
+  width: 329px;
+  height: 420px;
+  display: inline-block;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .img img {
+  width: 100%;
+  height: 100%;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .name {
+  position: absolute;
+  right: 32%;
+  top: 10%;
+  z-index: 4;
+  font-family: MalgunGothic;
+  font-size: 30px;
+  color: #eee;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .name span {
+  font-family: hurme;
+  font-size: 28px;
+  color: #eee;
+  display: block;
+  margin-top: 20px;
+  width: 20px;
+  white-space: nowrap;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .cast {
+  position: absolute;
+  left: -8%;
+  top: 40%;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .cast img {
+  width: 100%;
+  margin-top: 16px;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .cast p {
+  font-family: hurme;
+  font-size: 11px;
+  color: #aa8768;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  margin: 4px 0;
+  position: relative;
+}
+
+main .casting .fixing .cas_1 .jang_1 .photo .cast p span {
+  display: block;
+  border-bottom: 2px solid #aa8768;
+  margin: -8px auto;
+  width: 80px;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+
+main .casting .fixing .cas_1 .jang_1 .explan {
+  padding: 0;
+  margin: 0;
+  margin-top: 10%;
+  margin-left: 7%;
+  width: 600px;
+}
+
+main .casting .fixing .cas_1 .jang_1 .explan p {
+  display: inline-block;
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #808080;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=main_1_3.css.map */

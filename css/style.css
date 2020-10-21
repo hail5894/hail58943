@@ -399,7 +399,7 @@ main .menu .me .me_1 {
 main .menu .me .me_1 img {
   width: 100%;
   height: 100%;
-  opacity: .4;
+  opacity: .2;
   font-size: 0;
   line-height: 0;
 }
@@ -413,10 +413,10 @@ main .menu .me .me_1 div {
 }
 
 main .menu .me .me_1 div h2 {
-  font-family: NanumMyeongjo;
+  font-family: canela;
   font-size: 43px;
-  color: #fff;
-  font-weight: 300;
+  color: #808080;
+  font-weight: 400;
   text-align: center;
   line-height: 1.33;
   letter-spacing: normal;
@@ -425,7 +425,7 @@ main .menu .me .me_1 div h2 {
 main .menu .me .me_1 div p {
   font-family: MalgunGothic;
   font-size: 13px;
-  color: #eee;
+  color: #808080;
   font-weight: 100;
   font-family: Hurme;
   font-stretch: normal;
@@ -449,11 +449,29 @@ main .menu .me .me_1 div p:nth-of-type(2) {
   margin-top: 30%;
 }
 
+main .menu .me .me_1:hover p {
+  font-family: MalgunGothic;
+  font-size: 13px;
+  color: #d6d3d3;
+}
+
 main .menu .me .me_1:hover p:nth-of-type(2) {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: .7s;
   transition: .7s;
+}
+
+main .menu .me .me_1:hover h2 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: canela;
+  font-size: 43px;
+  color: #eee;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 main .not {
