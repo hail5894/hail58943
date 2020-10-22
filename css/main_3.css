@@ -643,4 +643,80 @@ main .bt .btn img {
   opacity: .4;
   padding-top: 10px;
 }
+
+
+
+
+@media (max-width:480px) {
+    main .summary{height: 100%;}
+    main .summary p{min-height:400px;}
+    
+    main .summary svg{
+        height: 30px;bottom:18%;
+    }
+    main .summary .back a div{font-size: 4px;}
+    main .summary .sum_font h2{font-size: 40px;}
+    
+    /*2작품개요*/
+    main .who{
+        padding: 100px 0;
+        width: 90%;
+        margin: 0 auto;
+        white-space: normal;
+        text-align: start;
+    }
+    main .who div{justify-content: space-between;}
+    main .who .who_top p, main .tena .tena_le span{font-size: 6px;}
+    main .who .who_top h2,main .tena .tena_le div h2{
+        font-size: 20px;   
+        margin-top: 20px;
+        margin-bottom: 10px;}
+    
+   
+    
+    main .who div .who_le p,main .who div .who_ri p,main .tena .tena_le div p{
+        margin-top: 30px;font-size: 12px; line-height:2;font-weight: 600;
+    }
+    main .who div .who_le{width: 80%;margin-right: 5%}
+    main .who div .who_ri{width: 80%;margin-left: 5%}
+    
+    
+    
+    main .photo .photo_1 p{font-size: 10px; font-weight: normal;}
+    main .photo .photo_1 h2{font-size: 22px;margin-top: 10px;margin-bottom: 50px;}
+    
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1{
+        margin-left: 10px; border: 1px solid #444;
+    }
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 p{width: 200px;height: 250px;}
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 ul{
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 ul{
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 ul li{font-size: 8px;}
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 ul li h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 ul li:last-child{font-size: 8px;margin-top: 5px;}
+    /*slide*/
+    main .side_le{display: none;}
+    
+     main .bt .btn{
+        width: 50px;
+        height: 50px;
+        bottom: -20px;
+        left: 45%;
+        right: 45%;
+    }
+    /*end*/
+}
+
+
+
 /*# sourceMappingURL=main_3.css.map */

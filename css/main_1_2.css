@@ -151,4 +151,55 @@ main .casting .fixing .cas_1 .jang_1 .explan p {
   line-height: 2em;
   letter-spacing: 1px;
 }
+
+@media (max-width:480px) {
+    
+    main .casting .fixing .cas_1{
+        flex-direction: column;
+    }
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .img{
+        width: 200px;
+        height: 100%;
+    }
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .cast{
+        left: 0;
+        top: 60%;
+    }
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .cast img,main .casting .fixing .cas_1 .jang_1 .photo .cast p{width: 80%;}
+    
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .name{
+        font-size: 20px;
+        font-weight: bold;
+        right: 0;
+        top: 0;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .name span{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    main .casting .fixing .cas_1 .jang_1 .explan{
+        margin-top: 30%;
+        margin-left: 7%;
+    }
+    main .casting .fixing .cas_1 .jang_1 .explan p{
+        line-height: 1.5;
+        font-size: 12px;
+        font-weight: 600;
+        
+    }
+    
+    .jang_1{display: flex;}
+    
+    
+    /*end*/
+}
+
+
+
+
+
 /*# sourceMappingURL=main_1_2.css.map */

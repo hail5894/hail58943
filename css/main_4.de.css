@@ -295,4 +295,83 @@ main .bt .btn img {
   opacity: .4;
   padding-top: 10px;
 }
+
+
+
+
+@media (max-width:480px) {
+    
+    main .who{
+        padding: 100px 0;
+        margin: 0 auto;
+        white-space: normal;
+        text-align: start;
+        padding-bottom: 50px;
+    }
+    main .who div{justify-content: space-between;}
+    main .who .who_top p, main .tena .tena_le span{font-size: 6px;}
+    main .who .who_top h2,main .tena .tena_le div h2{
+        font-size: 20px;   
+        margin-top: 20px;
+        margin-bottom: 10px;}
+    main .who .who_down_1{
+        margin-top: 5%;
+        padding-bottom:30px;
+    }
+    main .who .who_down_1 li{font-size: 11px;}
+    
+    main .not .not_main .not_main_1{
+        justify-content: flex-start;
+        width: 100%;height: 100%;
+    }
+  
+    main .not .not_main .not_main_1 .not_photo .not_font{
+        margin-left: 5%;
+    }
+    
+    main .not .not_main .not_main_1 .not_photo{
+        margin-left: 2%;
+    }
+    
+    
+    main .not .not_main .not_main_1 .not_photo .not_font p{
+        width: 200px; height: 100%;
+    }
+    main .not .not_main .not_main_1 .not_photo .not_font ul{
+        width: 200px;
+        border: 1px solid #eee;
+        padding: 0;
+    }
+    
+    main .not .not_main .not_main_1 .not_photo .not_font ul li h2{
+        font-size: 12px;
+    }
+    main .not .not_main .not_main_1 .not_photo .not_font ul li:last-child{
+        font-size: 6px;
+    }
+    
+    main .not .not_main .not_main_1:nth-of-type(2).active, main .not .not_main .not_main_1:nth-of-type(3).active{
+        margin: 0;
+    }
+    
+    
+    /**/
+    main .main_2{
+        background-size: 50%;
+        padding-bottom: 50%;
+    }
+    
+    main .main_2 div{width: 90%;margin-top: 10%;}
+    main .main_2 div p{width: 100%;line-height: 1.5;white-space: pre-line;font-size: 11px;}
+    
+    main .not{padding-bottom: 120px;}
+    main .not .h2{font-size: 12px;right: 40%;width: 50%;}
+    /*end*/
+}
+
+
+
+
+
+
 /*# sourceMappingURL=main_4.de.css.map */

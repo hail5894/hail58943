@@ -50,7 +50,7 @@ $(function() {
     var loop;
     $('.fixing').on('mousewheel',fadeM);
     $('.fixing').on('click',fadeC);
-
+    $('.fixing').on('touchstart',fadeC);
     //img change
     function fadeC(){
         $('.cas_1').eq(idx).fadeOut(700);

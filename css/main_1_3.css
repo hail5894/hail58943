@@ -151,4 +151,75 @@ main .casting .fixing .cas_1 .jang_1 .explan p {
   line-height: 2em;
   letter-spacing: 1px;
 }
+
+
+
+
+@media (max-width:480px) {
+    
+    main{background-size:60%;}
+    main .casting .fixing .cas_1 .jang_1 .explan{
+       
+    }
+    main .casting .fixing .cas_1{
+        flex-direction: column;
+    }
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .img{
+        width: 200px;
+        height: 100%;
+    }
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .cast{
+        left: 0;
+        top: 104%;
+
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .cast p{
+        color: #aa8768; font-size:14px;
+        font-weight: bold; white-space: nowrap;
+    }
+   
+     main .casting .fixing .cas_1 .jang_1 .photo .cast p span{
+          border-bottom: 1px solid #aa8768;
+         margin: 0;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .cast img,main .casting .fixing .cas_1 .jang_1 .photo .cast p{width: 80%;}
+    
+    
+    main .casting .fixing .cas_1 .jang_1 .photo .name{
+        font-size: 20px;
+        right: -30% !important;
+        top: 0;
+    }
+    
+     main .casting .fixing .cas_1 .jang_1 .explan{
+        margin-top: 30%;
+        margin-left: 7%;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .name span{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    
+   
+    main .casting .fixing .cas_1 .jang_1 .explan p{
+        line-height: 1.5;
+        font-size: 12px;
+      
+        
+    }
+ 
+    .jang_1{display: flex;}
+    
+    
+    /*end*/
+}
+
+
+
+
+
+
+
 /*# sourceMappingURL=main_1_3.css.map */

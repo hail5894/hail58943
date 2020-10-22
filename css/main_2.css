@@ -462,7 +462,11 @@ main .story .story_1 p {
   padding: 10px 0;
 }
 
-main .story .btn {
+main .bt {
+  position: relative;
+}
+
+main .bt .btn {
   position: absolute;
   width: 56px;
   height: 56px;
@@ -475,12 +479,13 @@ main .story .btn {
   margin: auto;
 }
 
-main .story .btn img {
+main .bt .btn img {
   width: 10px;
   height: 28px;
   opacity: .4;
   padding-top: 10px;
 }
+
 
 main .side_le {
   position: fixed;
@@ -529,4 +534,113 @@ main .side_le .side_le_2 span {
   display: block;
   /* margin-top: 20px; */
 }
+
+
+@media (max-width:480px) {
+    
+    main .summary{height: 100%;}
+    main .summary p{min-height:400px;}
+    
+    main .summary svg{
+        height: 30px;bottom:18%;
+    }
+    main .summary .back a div{font-size: 4px;}
+    main .summary .sum_font h2{font-size: 40px;}
+    
+    
+    /*2작품개요*/
+    main .who{
+        padding: 100px 0;
+        width: 90%;
+        margin: 0 auto;
+        white-space: normal;
+        text-align: start;
+    }
+    main .who .who_top p, main .tena .tena_le span{font-size: 6px;}
+    main .who .who_top h2,main .tena .tena_le div h2{
+        font-size: 20px;   
+        margin-top: 20px;
+        margin-bottom: 10px;}
+    
+    main .who div{
+        flex-direction: column;
+    }
+    main .who div .who_le{
+        margin: 1% auto;
+        
+    }
+    main .who div .who_le p,main .who div .who_ri p,main .tena .tena_le div p{
+        margin-top: 20px;font-size: 12px;
+    }
+    
+    
+    main .tena{
+        flex-direction: column;width: 100%;white-space: normal;    
+    }
+    main .tena .tena_le{width: 85%;margin: 0 auto;}
+    main .tena .tena_ri{width: 100%;height: 100%; margin-top: 10%;}
+    main .star{display: none;}
+
+    /*-----*/
+    main .main_5{
+        white-space: normal;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .main_5 .main_5_ri{margin-left: 0;}
+    main .tena .tena_le ul{margin-top: 0;}
+    main .tena .tena_le ul li, main .main_5 .main_5_ri ul li{line-height: 2.3;}
+    main .tena .tena_le ul li:first-child h2{
+        font-size: 20px;   
+        margin-top: 20px;
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+    main .tena .tena_le span{
+        margin-bottom: 1%;text-align: center;
+        margin-left: 45%;
+    }
+
+    .main_5_le{display: none;}
+    main .main_5 .main_5_ri div{
+        margin-left: 0;width: 100%; margin: 0 auto;
+        margin: 15% auto;
+    }
+    main .main_5 .main_5_ri div img{width: 100%;}
+    
+    main .main_5{
+        margin-top: 20%;
+    }
+    main .main_5 .main_5_ri ul{margin-top: 1%;margin-bottom: 10%;}
+    main .main_5 .main_5_ri ul li:first-child h2{font-size: 20px;}
+    /**/
+     
+    main .story{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 600px;
+        overflow: hidden;}
+    main .story .story_1{
+        width: 90%;left:0%;top: 0;white-space: normal;
+        margin-left: 5%;
+        padding-bottom: 10%;
+        margin-top: 10%;
+    }
+    main .story .story_1 p{  text-overflow: ellipsis;}
+    main .story .story_1 p:nth-of-type(2){display: none;}
+    
+    
+    /*slide*/
+    main .side_le{display: none;}
+    
+    /*end*/
+}
+
+
+
+
+
+
+
 /*# sourceMappingURL=main_2.css.map */
