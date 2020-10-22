@@ -24,7 +24,46 @@ main .vdo video {
   opacity: .4;
 }
 
+@-webkit-keyframes bb {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .2;
+  }
+  75% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
+@keyframes bb {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .2;
+  }
+  75% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
 main .vdo .vdo_font {
+  -webkit-animation: bb 4s;
+          animation: bb 4s;
+  opacity: 1;
   position: absolute;
   left: 0%;
   top: 20%;
@@ -98,6 +137,9 @@ main .vdo .vdo_font p:nth-of-type(3) {
 }
 
 main .vdo svg {
+  -webkit-animation: bb 3s;
+          animation: bb 3s;
+  opacity: 1;
   position: absolute;
   left: 50%;
   bottom: 14%;
@@ -110,8 +152,8 @@ main .vdo svg {
 main .vdo svg path {
   stroke-dashoffset: 0px;
   stroke-dasharray: 0px;
-  -webkit-animation: aa 2s infinite;
-          animation: aa 2s infinite;
+  -webkit-animation: aa 1.5s infinite;
+          animation: aa 1.5s infinite;
 }
 
 @-webkit-keyframes aa {

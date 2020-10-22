@@ -32,7 +32,19 @@ main {
             opacity: .4;
         }
 
+        @keyframes bb {
+            0%{opacity: 0;}
+            25%{opacity: .1;}
+            50%{opacity: .2;}
+            75%{opacity: .6;}
+            100%{opacity: .8;}
+        }
+
+
+
         .vdo_font {
+            animation: bb 4s;
+            opacity: 1;
             position: absolute;
             left: 0%;
             top: 20%;
@@ -104,6 +116,8 @@ main {
         }
 
         svg {
+            animation: bb 3s;
+            opacity: 1;
             position: absolute;
             left: 50%;
             bottom: 14%;
@@ -115,7 +129,7 @@ main {
             path{
                 stroke-dashoffset: 0px;
                 stroke-dasharray : 0px;
-                animation: aa 2s infinite;
+                animation: aa 1.5s infinite;
             }
 
             @keyframes aa {

@@ -61,8 +61,8 @@ main .summary svg {
 main .summary svg path {
   stroke-dashoffset: 0px;
   stroke-dasharray: 0px;
-  -webkit-animation: aa 2s infinite;
-          animation: aa 2s infinite;
+  -webkit-animation: aa 1.5s infinite;
+          animation: aa 1.5s infinite;
 }
 
 @-webkit-keyframes aa {
