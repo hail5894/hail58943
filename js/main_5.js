@@ -101,15 +101,21 @@ window.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             //  var a = secEl[idx].offsetTop;
             var a = secArr[idx];
-            window.scrollTo(0, a);
-        });
+            window.scrollTo(0, a);});
 
+        
+        
+        
     });
 
 
     var winH = window.innerHeight / 2;
     //이게 반절임 
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll',scroll_11);
+    window.addEventListener('touchmove',scroll_11);
+                                                   
+                            
+    function scroll_11(){
 
         secArr.forEach(function (el, idx) {
             //반절만 쪼끔만 지나가도 불이 들어올거임
@@ -125,8 +131,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             }
         });
-
-    });
+    }
 
     //end   
 });

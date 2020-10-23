@@ -275,24 +275,24 @@ main .bt .btn img {
     main .who .who_down_1 li{font-size: 11px;}
     
     main .not .not_main .not_main_1{
-        justify-content: flex-start;
+        justify-content: space-around;
         width: 100%;height: 100%;
     }
   
     main .not .not_main .not_main_1 .not_photo .not_font{
-        margin-left: 5%;
+        margin-left: 0%;
     }
     
     main .not .not_main .not_main_1 .not_photo{
-        margin-left: 2%;
+        margin-left: 1%;
     }
     
     
     main .not .not_main .not_main_1 .not_photo .not_font p{
-        width: 200px; height: 100%;
+        width: 170px; height: 100%;
     }
     main .not .not_main .not_main_1 .not_photo .not_font ul{
-        width: 200px;
+        width: 170px;
         border: 1px solid #eee;
         padding: 0;
     }

@@ -673,7 +673,7 @@ main .side_map a p {
 }
 
 main .side_map a p.active {
-  color: #404040;
+  color: #f3aa04;
   font-weight: bold;
 }
 
@@ -763,10 +763,12 @@ main .side_map.active {
     }
     main .tic_1 .tic_mid .tic_info tbody tr th{white-space: nowrap;}
     main .tic_1 .tic_mid .tic_info tbody tr{
-        border-bottom: 0.2px solid #1c1c1c;
+        border-bottom: 0.2px solid #cbcbcb;
         margin-top: 4px;
     }
-            
+    main .tic_1 .tic_mid .tic_info tbody tr:first-child{
+        border-top: 0.2px solid #cbcbcb;
+    }   
     main .view{padding-top: 50px; }
     
     main .view .view_1 div{width: 90%;}
@@ -845,7 +847,18 @@ main .side_map.active {
     .map_2{display: none;}
     main .last .vis_1-2 div a{width: 220px;padding: 0 40px;}
     /**/
-    main .side_map{display: none;}
+    main .side_map{padding-left:10px;}
+    main .side_map a.active::before{display: none;}
+    main .last .btn{
+        width: 50px;
+        height: 50px;
+        bottom: -10px;
+        left: 50%;
+        right: 50%;
+    }
+    main .side_map a p{color: #aa8768;}
+    main .side_map a p.active{color: #f3aa04;}
+    main .side_map a{margin-left: 10px;}
     /*end*/
 }
 

@@ -389,14 +389,14 @@ main .video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 969px;
+  height: 100%;
   z-index: 30;
 }
 
 main .video .video_1 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 main .video .video_1 .vdo_name {
@@ -440,6 +440,7 @@ main .video .video_1 .vdo_display div .pho_vdo {
 
 main .video .video_1 .vdo_display div .pho_vdo video {
   display: block;
+    position: relative;
 }
 
 main .video .video_1 .vdo_display div .pho_vdo:nth-of-type(1) {
@@ -502,14 +503,14 @@ main .pho {
   top: 0;
   left: 0;
   width: 100%;
-  height: 969px;
+  height: 100%;
   z-index: 30;
 }
 
 main .pho .photo_1 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 main .pho .photo_1 .pho_name {
@@ -644,9 +645,23 @@ main .bt .btn img {
   padding-top: 10px;
 }
 
+/*-------------------------------*/
+main .video .video_1 .vdo_display .btn_2_1{
+    position: absolute;
+    left: 45%;top:45%;
+     transform: translateX(-50%, -50%);
+    width: 90px;height: 70px;
+    cursor: pointer;
+ 
+}
 
+main .video .video_1 .vdo_display .btn_2_1 img{
+    width: 100%;height: 100%; z-index: 30;    
+}
 
+.btn_2_3{opacity: .3}
 
+/*-------------미디어---------------*/
 @media (max-width:480px) {
     main .summary{height: 100%;}
     main .summary p{min-height:400px;}
@@ -710,9 +725,55 @@ main .bt .btn img {
      main .bt .btn{
         width: 50px;
         height: 50px;
-        bottom: -20px;
-        left: 45%;
-        right: 45%;
+        bottom: -10px;
+        left: 50%;
+        right: 50%;
+    }
+    /*포토*/
+    main .pho{height: 100%;}
+   
+    main .pho .photo_1{height: 100%;width: 90%;margin: 0 auto;}
+    main .pho .photo_1 .pho_name{top:10%; transform: rotate(0deg);}
+    main .pho .photo_1 .pho_name p{}
+    main .pho .photo_1 .pho_display{
+        width: 90%;;
+        left: 0;
+        top: 25%;
+        height: 400px;
+        margin-left: 0;
+
+    }
+    
+    main .pho .photo_1 .pho_num{right: 10%;bottom: 13%;}
+    main .pho .photo_1 .pho_x{right: 10%;}
+    /*동영상*/
+    main .video .video_1{height: 100%;width: 90%;margin: 0 auto;}
+    main .video .video_1 .vdo_name{left: 0;bottom: 90%; transform: rotate(0deg);}
+    main .video .video_1 .vdo_display{
+        width: 95%;
+        left: 0;
+        top: 25%;
+        height: 400px;
+        margin-left: 0;
+    }
+    
+    main .video .video_1 .vdo_display div{  
+        width: 400px !important;
+        height: 400px !important;}
+    main .video .video_1 .vdo_display div .pho_vdo video{
+        width: 400px !important;
+        height: 400px !important;
+    }
+    
+    main .video .video_1 .vdo_display .btn_2_1{
+        width: 40px;
+        height: 40px;
+        left: 40%;
+    }
+    
+      main .video .video_1 .vdo_display .btn_2_1 img{
+        width: 40px;
+        height: 40px;
     }
     /*end*/
 }

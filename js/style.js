@@ -31,7 +31,7 @@ $(function () {
 
         if (e.originalEvent.wheelDelta < 0) {
             if (i <= -1) {
-               i+=2;
+                i += 2;
             } else {
                 i += 2;
             }
@@ -149,52 +149,92 @@ $(function () {
 //5. notice 관련
 $(function () {
     //start
-    $('.not_1').draggable({ axis: "x"});
+    $('.not_1').draggable({
+        axis: "x"
+    });
+
+
     // /mouseenter
     $('.not_1-1').mouseenter(function () {
         $(this).children('span').fadeIn(400);
         $(this).children('span').css({
             'display': 'flex',
-            'transition':'.7'
+            'transition': '.7'
         });
-        $(this).children('.not_main').children('p').children('img').attr('src','img/main/not_1_1.jpg'); 
-   
+        $(this).children('.not_main').children('p').children('img').attr('src', 'img/main/not_1_1.jpg');
+
     });
     //mouseleave
     $('.not_1-1').mouseleave(function () {
         $(this).children('span').fadeOut(100);
         $(this).children('span').css({
-            'transition':'.7'
-            
+            'transition': '.7'
+
         });
-        $(this).children('.not_main').children('p').children('img').attr('src','img/main/not_1.jpg');
-       
+        $(this).children('.not_main').children('p').children('img').attr('src', 'img/main/not_1.jpg');
+
     });
 
     //btn
-    var idx=0;
+    var idx = 0;
     //처음에 부드럽게 이동하기 위해 눈속임
     $('.not_1').css({
-        'left' : '0px',
-        'transition':'1s'
+        'left': '0px',
+        'transition': '1s'
     });
 
-    $('.drag_2 a').on('click',function(e){
+    $('.drag_2 a').on('click', drag);
+  
+
+    function drag(e) {
         e.preventDefault();
-        if($(this).index()==0){
-            idx+=300;
-        }else{
-            idx-=300;
+        if ($(this).index() == 0) {
+            idx += 300;
+        } else {
+            idx -= 300;
         }
 
         $('.not_1').css({
-            'left' : idx +'px',
-            'transition':'1s'
+            'left': idx + 'px',
+            'transition': '1s'
         });
 
+    }
 
-    });
-   
+
+   if (window.innerWidth < 480) {
+       
+       $('.drag_1 p').html('CLICK TO MOVE')
+   }
+
+
+
     //end
 });
 
+
+//모바일
+
+function init() {
+    if (window.innerWidth < 480) {
+        var h2 = document.querySelector('.vis_1-1 h2');
+        var idx = 0;
+        var pos = 0;
+
+        window.addEventListener('scroll', touch);
+
+        function touch(e) {
+            pos = window.scrollY;
+            idx = pos * 0.5;
+
+            h2.style.transform = 'translateX(' + idx + '%)';
+            h2.style.transition = '.5s';
+
+        }
+    }
+
+}
+
+//스크롤도 사용 가능 (터치이벤트)
+
+window.addEventListener('DOMContentLoaded', init);

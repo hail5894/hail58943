@@ -167,12 +167,12 @@ main .casting .fixing .cas_1 .jang_1 .explan p {
     
     main .casting .fixing .cas_1 .jang_1 .photo .img{
         width: 200px;
-        height: 100%;
+        height: 240px;
     }
     
     main .casting .fixing .cas_1 .jang_1 .photo .cast{
         left: 0;
-        top: 104%;
+        top: 100%;
 
     }
     main .casting .fixing .cas_1 .jang_1 .photo .cast p{
@@ -194,7 +194,7 @@ main .casting .fixing .cas_1 .jang_1 .explan p {
     }
     
      main .casting .fixing .cas_1 .jang_1 .explan{
-        margin-top: 30%;
+        margin-top: 15%;
         margin-left: 7%;
     }
     main .casting .fixing .cas_1 .jang_1 .photo .name span{
