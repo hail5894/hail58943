@@ -733,30 +733,35 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .pho{height: 100%;}
    
     main .pho .photo_1{height: 100%;width: 90%;margin: 0 auto;}
-    main .pho .photo_1 .pho_name{top:10%; transform: rotate(0deg);}
+    main .pho .photo_1 .pho_name{top: 0; transform: rotate(0deg);}
     main .pho .photo_1 .pho_name p{}
     main .pho .photo_1 .pho_display{
-        width: 90%;;
+        width: 100%;
         left: 0;
-        top: 25%;
+         top: 50%;
         height: 400px;
         margin-left: 0;
 
     }
     
-    main .pho .photo_1 .pho_num{right: 10%;bottom: 13%;}
-    main .pho .photo_1 .pho_x{right: 10%;}
+    main .pho .photo_1 .pho_num{right: 1%;bottom: 0%;}
+    main .pho .photo_1 .pho_x,main .video .video_1 .pho_x{right: 0;top: 0;}
+    
+    
+    
     /*동영상*/
-    main .video .video_1{height: 100%;width: 90%;margin: 0 auto;}
-    main .video .video_1 .vdo_name{left: 0;bottom: 90%; transform: rotate(0deg);}
+    main .video .video_1{height: 100%;width: 100%;margin: 0 auto;}
+    main .video .video_1 .vdo_name{left: 0;top: 0; transform: rotate(0deg);}
     main .video .video_1 .vdo_display{
         width: 95%;
         left: 0;
-        top: 25%;
+        top: 50%;
         height: 400px;
         margin-left: 0;
     }
-    
+    main .video .video_1 .vdo_num{
+        right: 1%;bottom: 0%;
+    }
     main .video .video_1 .vdo_display div{  
         width: 400px !important;
         height: 400px !important;}

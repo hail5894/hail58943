@@ -69,9 +69,9 @@ function init() {
             });
 
 
-            /*2.모바일*/
+            /*2.모바일 사진*/
             if(window.innerWidth<480){
-            el.addEventListener('touchmove', function (e) {
+            el.addEventListener('click', function (e) {
                 console.log('a')
                 try {
                     move = el.nextElementSibling.offsetLeft;
@@ -81,6 +81,7 @@ function init() {
                 } finally {}
                 slide_1.style.transform = "translateX(-" + move + "px)";
             });
+          
             }
 
         });
@@ -126,10 +127,8 @@ $(function () {
     if (window.innerWidth < 480) {
 
         $('.vdoCool').on('touchstart', videoToll);
-        $('.vdoCool').on('touchmove', function () {
-            $('.btn_2_1').fadeOut();
-
-        });
+        
+      
     }
 
 
