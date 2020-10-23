@@ -225,7 +225,7 @@ function init() {
 
         function touch(e) {
             pos = window.scrollY;
-            idx = pos * 0.5;
+            idx = pos * 0.08;
 
             h2.style.transform = 'translateX(' + idx + '%)';
             h2.style.transition = '.5s';
