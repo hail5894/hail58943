@@ -738,7 +738,7 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .pho .photo_1 .pho_display{
         width: 100%;
         left: 0;
-         top: 20%;
+         top: 10%;
         height: 400px;
         margin-left: 0;
 
@@ -755,7 +755,7 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .video .video_1 .vdo_display{
         width: 95%;
         left: 0;
-        top: 20%;
+        top: 10%;
         height: 400px;
         margin-left: 0;
     }
