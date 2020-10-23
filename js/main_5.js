@@ -76,7 +76,7 @@ function nav(e) {
 
 $(window).on('mousewheel', nav);
 
-
+$(window).on('scroll', nav);
 });
 
 

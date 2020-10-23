@@ -858,7 +858,7 @@ main .side_map.active {
     }
     main .side_map a p{color: #aa8768;}
     main .side_map a p.active{color: #f3aa04;}
-    main .side_map a{margin-left: 10px;}
+    main .side_map a{margin-left: 20px;}
     /*end*/
 }
 
