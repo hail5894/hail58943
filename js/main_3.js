@@ -68,11 +68,11 @@ function init() {
 
             });
 
-
+        
             /*2.모바일 사진*/
             if(window.innerWidth<480){
+                
             el.addEventListener('click', function (e) {
-                console.log('a')
                 try {
                     move = el.nextElementSibling.offsetLeft;
                     phoNum.innerHTML = '0' + (i + 1 + 1);
@@ -128,6 +128,10 @@ $(function () {
 
         $('.vdoCool').on('touchstart', videoToll);
         
+//        $('.pho_vdo').on('mouseleave', function () {
+//        $('.btn_2_1').fadeOut();
+
+    });
       
     }
 

@@ -733,29 +733,29 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .pho{height: 100%;}
    
     main .pho .photo_1{height: 100%;width: 90%;margin: 0 auto;}
-    main .pho .photo_1 .pho_name{top: 0; transform: rotate(0deg);}
+    main .pho .photo_1 .pho_name{top: 1%; transform: rotate(0deg);}
     main .pho .photo_1 .pho_name p{}
     main .pho .photo_1 .pho_display{
         width: 100%;
         left: 0;
-         top: 10%;
+         top: 15%;
         height: 400px;
         margin-left: 0;
 
     }
     
     main .pho .photo_1 .pho_num{right: 1%;bottom: 0%;}
-    main .pho .photo_1 .pho_x,main .video .video_1 .pho_x{right: 0;top: 0;}
+    main .pho .photo_1 .pho_x,main .video .video_1 .pho_x{right: 1%;top: 1%;}
     
     
     
     /*동영상*/
     main .video .video_1{height: 100%;width: 100%;margin: 0 auto;}
-    main .video .video_1 .vdo_name{left: 0;top: 0; transform: rotate(0deg);}
+    main .video .video_1 .vdo_name{left: 0;top: 1%; transform: rotate(0deg);}
     main .video .video_1 .vdo_display{
         width: 95%;
         left: 0;
-        top: 10%;
+        top: 15%;
         height: 400px;
         margin-left: 0;
     }
