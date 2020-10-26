@@ -131,7 +131,7 @@ $(function () {
 //        $('.pho_vdo').on('mouseleave', function () {
 //        $('.btn_2_1').fadeOut();
 
-    });
+
       
     }
 
