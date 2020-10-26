@@ -73,6 +73,7 @@ function init() {
             if (window.innerWidth < 480) {
                 
                 el.addEventListener('click', function (e) {
+                
                     try {
                         move = el.nextElementSibling.offsetLeft;
                         phoNum.innerHTML = '0' + (i + 1 + 1);
@@ -130,26 +131,29 @@ $(function () {
 
 
     if (window.innerWidth < 480) {
+        
+        
+        
         var video = $('.pho_vdo video').get(0);
 
         $('.btn_2_2').show();
         $('.vdoCool').on('touchstart', videoToll);
-
-        function videoToll() {
-            var a = $(this).index();
-            video = $('.pho_vdo video').get(a);
-
-            $('.btn_2_2').fadeIn();
-            $('.btn_2_2').on('click', function (e) {
-                if (video.paused === false) {
-                    video.pause();
-                } else {
-                    // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
-
-                    video.play();
-                }
-            });
-        }
+//
+//        function videoToll() {
+//            var a = $(this).index();
+//            video = $('.pho_vdo video').get(a);
+//
+//            $('.btn_2_2').fadeIn();
+//            $('.btn_2_2').on('click', function (e) {
+//                if (video.paused === false) {
+//                    video.pause();
+//                } else {
+//                    // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
+//
+//                    video.play();
+//                }
+//            });
+//        }
 
     }
 

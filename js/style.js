@@ -224,8 +224,10 @@ function init() {
         window.addEventListener('scroll', touch);
 
         function touch(e) {
+        
             pos = window.scrollY;
-            idx = pos * 0.08;
+ 
+            idx = pos * 0.06;
 
             h2.style.transform = 'translateX(' + idx + '%)';
             h2.style.transition = '.5s';
