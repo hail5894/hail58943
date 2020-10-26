@@ -60,7 +60,7 @@ function init() {
                         move = el.previousElementSibling.offsetLeft;
                         phoNum.innerHTML = '0' + (i);
                     } catch {
-                        alert('이전 사진이 없습니다.')
+                        alert('이전 사진이 없습니다.');
                     }
                 }
                 slide_1.style.transform = "translateX(-" + move + "px)";
@@ -71,14 +71,15 @@ function init() {
 
             /*2.모바일 사진*/
             if (window.innerWidth < 480) {
-
+                var vdoCol = document.querySelectorAll('.vdoCool');
                 el.addEventListener('click', function (e) {
                     try {
                         move = el.nextElementSibling.offsetLeft;
                         phoNum.innerHTML = '0' + (i + 1 + 1);
                     } catch {
-                       move = el.previousElementSibling.offsetLeft;
-                        phoNum.innerHTML = '0' + (i);
+                        alert('마지막 화면입니다.');
+
+
                     } finally {}
                     slide_1.style.transform = "translateX(-" + move + "px)";
                 });
@@ -114,7 +115,7 @@ $(function () {
                 video.pause();
             } else {
                 // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
-
+        
                 video.play();
             }
         });
@@ -125,48 +126,14 @@ $(function () {
 
     });
 
-    
-    
-    
+
+
+
     if (window.innerWidth < 480) {
-        
-          $('.vdoCool').on('touchstart', videoToll);
-//        var video = $('.pho_vdo video').get(0);
-//        $('.vdoCool').on('touchstart', videoToll);
-//        $('.btn_2_2').show();
-//        $('.btn_2_2').css({
-//            'position': 'absolute',
-//            'width':'400px','height':'400px',
-//            'backgroundColor':'#000','left':'0',
-//            'top':'0','opacity':'0.7'
-//        });
-//        $('.btn_2_2 img').css({
-//            'position': 'absolute',
-//            'backgroundColor':'#000',
-//            'left':'50%',
-//            'top':'50%','opacity':'1'
-//        });
-//
-//        function videoToll() {
-//            var a = $(this).index();
-//            video = $('.pho_vdo video').get(a);
-//            $('.btn_2_2').on('click', function (e) {
-//                if (video.paused === false) {
-//                    video.pause();
-//                    $(this).css({
-//                        'display':'none'
-//                    })
-//                } else {
-//                    // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
-//
-//                    video.play();
-//                }
-//            });
-//        }
-//
 
-
+        $('.vdoCool').on('touchstart', videoToll);
     }
+
 
 
 
