@@ -648,15 +648,19 @@ main .bt .btn img {
 /*-------------------------------*/
 main .video .video_1 .vdo_display .btn_2_1{
     position: absolute;
-    left: 45%;top:45%;
+    left:0%;top:0%;
      transform: translateX(-50%, -50%);
-    width: 90px;height: 70px;
+    width: 100%;height: 100%;
     cursor: pointer;
  
 }
 
 main .video .video_1 .vdo_display .btn_2_1 img{
-    width: 100%;height: 100%; z-index: 30;    
+    width:80px;height: 80px; z-index: 30;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .btn_2_3{opacity: .3}
@@ -771,16 +775,22 @@ main .video .video_1 .vdo_display .btn_2_1 img{
         height: 400px !important;
     }
     
-    main .video .video_1 .vdo_display .btn_2_1{
-        width: 40px;
-        height: 40px;
-        left: 40%;
-    }
-    
-      main .video .video_1 .vdo_display .btn_2_1 img{
-        width: 40px;
-        height: 40px;
-    }
+main .video .video_1 .vdo_display .btn_2_1{
+    position: absolute;
+    left:0%;top:0%;
+     transform: translateX(-50%, -50%);
+    width: 100%;height: 100%;
+    cursor: pointer;
+ 
+}
+
+main .video .video_1 .vdo_display .btn_2_1 img{
+    width:40px;height: 40px; z-index: 30;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
     /*end*/
 }
 
