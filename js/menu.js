@@ -3,15 +3,14 @@
 $(function () {
 
 
-
+    var i=0;
     $('.me_1').each(function (idx, el) {
-        $(this).parent().css({
-            'transition':'.5s'
-        }); 
-        $(this).children('div').on('mouseenter', function () {
-          
+        i=$(this).index();
+
+        $(this).on('mouseenter', function () {
+              i=$(this).index();
             $(this).parents('.menu').css({
-                'background': "url(../img/menu/ba"+(idx+1)+".jpg)",
+                'background': "url(../img/menu/ba"+(i+1)+".jpg)",
                 'transition':'.5s'
             }); 
 

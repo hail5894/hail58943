@@ -24,7 +24,8 @@ function init() {
         // 2. 사진,동영상 클릭시 포토화면나오게하기,엑스표시 닫기 클릭
         main.addEventListener('click', fun);
 
-        function fun() {
+        function fun(e) {
+            e.preventDefault();
             var x = document.querySelectorAll('.pho_x');
             x.forEach(function (e) {
                 e.addEventListener('click', function () {
@@ -106,7 +107,8 @@ $(function () {
 
     $('.vdoCool').on('mouseenter', videoToll);
 
-    function videoToll() {
+    function videoToll(e) {
+        e.preventDefault();
         var a = $(this).index();
         video = $('.pho_vdo video').get(a);
 
@@ -129,31 +131,26 @@ $(function () {
 
 
 
-
     if (window.innerWidth < 480) {
-        
-        
-        
         var video = $('.pho_vdo video').get(0);
 
-        $('.btn_2_2').show();
         $('.vdoCool').on('touchstart', videoToll);
-//
-//        function videoToll() {
-//            var a = $(this).index();
-//            video = $('.pho_vdo video').get(a);
-//
-//            $('.btn_2_2').fadeIn();
-//            $('.btn_2_2').on('click', function (e) {
-//                if (video.paused === false) {
-//                    video.pause();
-//                } else {
-//                    // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
-//
-//                    video.play();
-//                }
-//            });
-//        }
+
+        function videoToll() {
+            var a = $(this).index();
+            video = $('.pho_vdo video').get(a);
+
+            $('.btn_2_2').fadeIn();
+            $('.btn_2_2').on('click', function (e) {
+                if (video.paused === false) {
+                    video.pause();
+                } else {
+                    // $('.pho_vdo > img').attr('src', 'img/main_3/arrow_1.png');
+
+                    video.play();
+                }
+            });
+        }
 
     }
 
