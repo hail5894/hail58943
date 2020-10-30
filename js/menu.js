@@ -10,7 +10,7 @@ $(function () {
         $(this).on('mouseenter', function () {
               i=$(this).index();
             $(this).parents('.menu').css({
-                'background': "url(../img/menu/ba"+(i+1)+".jpg)",
+                'background': "url(img/menu/ba"+(i+1)+".jpg)",
                 'transition':'.5s'
             }); 
 
