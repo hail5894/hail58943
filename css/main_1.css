@@ -470,7 +470,8 @@ main .side_le {
   z-index: 2;
   top: calc(90px + 90 * ((100vw - 320px) / 1600));
   opacity: 1;
-  right: calc(25px + 55 * ((100vw - 320px) / 1600));
+  /*right: calc(25px + 55 * ((100vw - 320px) / 1600));*/
+   transition: .5s;
 }
 
 main .side_le .side_le_1 {
@@ -512,7 +513,55 @@ main .side_le .side_le_2 span {
 }
 
 
+@media (max-width:1350px) and (min-width:1024px) {
+    main .summary .sum_font h2{
+        font-size: 130px;
+    }
+}
 
+
+@media (max-width:1500px) and (min-width:1024px) {
+    main .who{white-space: normal; width: 90%;}
+    main .who div{justify-content:flex-start;}
+    main .who div .who_le p,main .who div .who_ri p{
+        width: 80%;
+        text-align: center;
+        line-height: 2.5em;   
+        margin-left: 10%;
+        margin-top: 60px;
+    }
+    main .tena .tena_le div h2{
+        margin-bottom: 20px;
+    }
+    main .tena{
+        width: 90%;
+    }
+    main .tena .tena_le{
+        width: 50%;
+        margin-right: 10%;
+    }
+    main .tena .tena_le div p{
+        white-space: normal;
+    }
+    main .star{margin: 200px 0;}
+    main .main_5{width: 90%;}
+    main .main_5 .main_5_ri div{margin-left: 0;}
+    
+    
+    main .main_5{position: relative;}
+    main .main_5 .main_5_ri ul h2{
+        white-space: normal;
+        line-height: 1.5;
+    }
+    main .main_5 .main_5_ri ul:nth-of-type(2){
+      position: absolute;left: 0%; bottom: -10%;
+        width: 50%;
+    }
+  
+    /*end*/
+}
+
+/*480*/
 @media (max-width:480px) {
     main .summary{height: 100%;}
     main .summary p{min-height:400px;}

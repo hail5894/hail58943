@@ -493,7 +493,7 @@ main .side_le {
   top: calc(90px + 90 * ((100vw - 320px) / 1600));
   opacity: 1;
   -webkit-transition: .5s;
-  transition: .5s;
+
   /* right: calc(25px + 55 * ((100vw - 320px) / 1600)); */
 }
 
@@ -534,8 +534,38 @@ main .side_le .side_le_2 span {
   display: block;
   /* margin-top: 20px; */
 }
+/*1024*/
 
+@media (max-width:1350px) and (min-width:1024px) {
+    main .summary .sum_font h2{
+        font-size: 130px;
+    }
+}
 
+@media (max-width:1500px) and (min-width:1024px) {
+    main .star{margin: 200px 0;}  
+    main .main_5{
+        width: 90%;
+        position: relative;
+    }
+    
+    main .main_5 .main_5_ri ul h2{
+        white-space: normal;
+        line-height: 1.5;
+    }
+    main .main_5 .main_5_ri ul:nth-of-type(2){
+      position: absolute;left: 0%; bottom: -10%;
+        width: 50%;
+    }
+    main .main_5 .main_5_ri ul li:last-child{
+        text-align: left;
+    }
+  
+
+    
+}
+
+/*480*/
 @media (max-width:480px) {
     
     main .summary{height: 100%;}

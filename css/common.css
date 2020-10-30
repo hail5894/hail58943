@@ -331,6 +331,13 @@ footer .footer .f_main {
     margin-bottom: 32px;
 }
 
+@media (max-width:1500px) and (min-width:1024px) {
+    footer .footer{width: 90%;}
+    
+    /*end*/
+}
+
+/*480*/
 @media (max-width:480px) {
     /*header*/
     header{height: 60px;}
@@ -384,6 +391,7 @@ footer .footer .f_main {
         bottom: -10px;
         left: 50%;
         right: 50%;
+         transform: translate(-50%,-50%);
     }
     /*end*/
 }

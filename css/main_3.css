@@ -192,7 +192,7 @@ main .who div .who_le h2 {
 }
 
 main .who div .who_le p {
-  margin-top: 80px;
+  margin-top: 20px;
   font-family: canela;
   font-size: 14px;
   color: #808080;
@@ -223,7 +223,7 @@ main .who div .who_ri h2 {
 }
 
 main .who div .who_ri p {
-  margin-top: 60px;
+  margin-top: 0px;
   font-family: canela;
   font-size: 14px;
   color: #808080;
@@ -664,6 +664,54 @@ main .video .video_1 .vdo_display .btn_2_1 img{
 }
 
 .btn_2_3{opacity: .3}
+/*1024*/
+@media (max-width:1350px) and (min-width:1024px) {
+    main .summary .sum_font h2{
+        font-size: 130px;
+    }
+}
+
+
+
+@media (max-width:1500px) and (min-width:1024px) {
+    main .who{
+        white-space: normal;
+    }
+    main .who div .who_le p,main .who div .who_ri p{
+        width: 70%; margin-top: 0;
+    }
+    main .who div .who_le p{
+        margin-left: 15%;
+    }
+    main .who div .who_ri p{
+        margin-left: 10%;
+    }
+    main .photo .photo_2 .photo_2_1 .photo_2_1-1 p{
+        width: 450px; height: 400px;
+    }
+    main .who .who_top h2{
+        margin-bottom: 80px;
+    }
+    /*사진*/
+    main .pho .photo_1 .pho_display{
+        width: 800px;
+        height: 450px;
+        left: 13%;
+    }
+    /*비디오*/
+    main .video .video_1 .vdo_display{
+          left: 15%;
+    }
+    main .video .video_1 .vdo_display div{
+        width: 800px;
+        height: 450px;
+    }
+    main .video .video_1 .vdo_display div video{
+        width: 800px;
+        height: 450px;
+    }
+    
+}
 
 /*-------------미디어---------------*/
 @media (max-width:480px) {
@@ -737,35 +785,35 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .pho{height: 100%;}
    
     main .pho .photo_1{height: 100%;width: 90%;margin: 0 auto;}
-    main .pho .photo_1 .pho_name{top: 1%; transform: rotate(0deg);}
+    main .pho .photo_1 .pho_name{top: 5%; transform: rotate(0deg);}
     main .pho .photo_1 .pho_name p{}
     main .pho .photo_1 .pho_display{
         width: 100%;
         left: 0;
-         top: 15%;
+         top: 25%;
         height: 400px;
         margin-left: 0;
       
 
     }
     
-    main .pho .photo_1 .pho_num{right: 1%;bottom: 0%;}
-    main .pho .photo_1 .pho_x,main .video .video_1 .pho_x{right: 1%;top: 1%;}
+    main .pho .photo_1 .pho_num{right: 1%;bottom: 5%;}
+    main .pho .photo_1 .pho_x,main .video .video_1 .pho_x{right: 4%;top: 5%;}
     
     
     
     /*동영상*/
     main .video .video_1{height: 100%;width: 100%;margin: 0 auto;}
-    main .video .video_1 .vdo_name{left: 0;top: 1%; transform: rotate(0deg);}
+    main .video .video_1 .vdo_name{left: 0;top: 5%; transform: rotate(0deg);}
     main .video .video_1 .vdo_display{
         width: 95%;
         left: 0;
-        top: 15%;
+        top: 258%;
         height: 400px;
         margin-left: 0;
     }
     main .video .video_1 .vdo_num{
-        right: 1%;bottom: 0%;
+        right: 1%;bottom: 5%;
     }
     main .video .video_1 .vdo_display div{  
         width: 400px !important;

@@ -151,7 +151,34 @@ main .casting .fixing .cas_1 .jang_1 .explan p {
   line-height: 2em;
   letter-spacing: 1px;
 }
+/*1500*/
+@media (max-width:1500px) and (min-width:1024px) {
+    main .casting{
+        margin-left:6%;
+        margin-top: 8%;
+        overflow: visible;
+    }
+    main .casting .fixing{width: 90%;}
+    main .casting .fixing .cas_1 .jang_1 .explan{
+        margin-left: 0;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .name{
+        right: 0%;
+        left: 0;
+        top: -20%;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .cast{
+        left: 0;
+    }
 
+    main .casting .fixing .cas_1 .jang_1 .explan p{
+        width: 65%;
+    }
+    main .casting .fixing .cas_1 .jang_1 .photo .name span{
+        font-size: 28px;
+    }
+    /*end*/
+}
 @media (max-width:480px) {
     
     main .casting .fixing .cas_1{

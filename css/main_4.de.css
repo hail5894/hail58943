@@ -296,9 +296,25 @@ main .bt .btn img {
   padding-top: 10px;
 }
 
+/*1024*/
+@media (max-width:1200px) and (min-width:1024px) {
+     main .not .not_main .not_main_1{
+        width: 100%;
+    }
+    main .not .not_main .not_main_1 .not_photo .not_font p{
+        width: 420px;
+        height: 300px;
+    }
+    main .not .h2{right:36%;}
+    
+}
 
+@media (max-width:1500px) and (min-width:1024px) {
+    main .main_2 div{width: 70%;}
+    main .main_2 div p{width: 80%;}
+}
 
-
+/*480*/
 @media (max-width:480px) {
     
     main .who{

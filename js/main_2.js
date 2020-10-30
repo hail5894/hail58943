@@ -11,11 +11,15 @@ $(function () {
         var offsetArr = [],
             imgTop;
 
-        if (top > $('.who_top').children('p').offset().top && top < $('.main_5_1').offset().top - 100) {
+        if (top > $('.who_top').children('p').offset().top && top < $('.main_5_1,.story').offset().top - 100) {
             $('.side_le').css({
                 'right': 'calc(25px + 55 * ((100vw - 320px) / 1600))'
             });
-
+            if(window.innerHeight<1300){
+                 $('.side_le').css({
+                'right': '2%'
+            });
+            }
         } else {
             $('.side_le').css({
                 'right': '-100px'

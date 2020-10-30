@@ -252,8 +252,25 @@ main .bt .btn img {
   padding-top: 10px;
 }
 
+/*1024*/
+@media (max-width:1200px) and (min-width:1024px) {
+    main .not .not_main .not_main_1 .not_photo .not_font p{
+        width: 450px;
+        height: 300px;
+    }
+    
+}
+@media (max-width:1500px) and (min-width:1024px) {
+   
+    main .not .not_main .not_main_1{
+        width: 100%;
+    }
+    /*end*/
+}
 
 
+
+/*480*/
 @media (max-width:480px) {
     main .who{
         padding: 100px 0;
