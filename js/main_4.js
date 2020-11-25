@@ -60,9 +60,17 @@ $(function () {
         $(this).children('span').fadeIn(400);
         $(this).children('span').css({
             'display': 'flex',
-            'transition':'.7'
+            'transition':'.7',
+            'z-index':'10'
         });
-        $(this).children('.not_font').children('p').children('img').attr('src','img/main/not_1_1.jpg'); 
+       $(this).children('.not_font').children('p').css({
+              'backgroundColor':'#000'
+       });
+        $(this).children('.not_font').children('p').children('img').css({
+            'opacity':'.6'
+         
+        });
+//        $(this).children('.not_font').children('p').children('img').attr('src','img/main/not_1_1.jpg'); 
    
     });
     //mouseleave
@@ -72,7 +80,11 @@ $(function () {
             'transition':'.7'
             
         });
-        $(this).children('.not_font').children('p').children('img').attr('src','img/main/not_1.jpg');
+        
+          $(this).children('.not_font').children('p').children('img').css({
+           'opacity':'1' 
+        });
+//        $(this).children('.not_font').children('p').children('img').attr('src','img/main/not_1.jpg');
        
     });
 
