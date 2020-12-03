@@ -23,7 +23,7 @@ function init() {
 
         // 2. 사진,동영상 클릭시 포토화면나오게하기,엑스표시 닫기 클릭
         main.addEventListener('click', fun);
-
+        
         function fun(e) {
             e.preventDefault();
             var x = document.querySelectorAll('.pho_x');
@@ -43,10 +43,15 @@ function init() {
 
         //3. 사진,동영상 클릭시 넘겨지게 하기,숫자증감
         var move = 0;
-
+        var aa,bb;
         slideImg.forEach(function (el, i) {
-            el.addEventListener('mousewheel', function (e) {
-                if (e.wheelDelta < 0) {
+            el.addEventListener('mousewheel',wheelEvent); 
+            el.addEventListener('DOMMouseScroll',wheelEvent); 
+            
+            function wheelEvent(e){
+                aa = e.wheelDelta;
+                bb = e.detail
+                if (aa < 0  || bb > 0) {
                     //down 내리면(-)
                     try {
                         move = el.nextElementSibling.offsetLeft;
@@ -65,16 +70,11 @@ function init() {
                     }
                 }
                 slide_1.style.transform = "translateX(-" + move + "px)";
-
-
-            });
-
-
+            }  
+                         
             /*2.모바일 사진*/
             if (window.innerWidth < 480) {
-                
                 el.addEventListener('click', function (e) {
-                
                     try {
                         move = el.nextElementSibling.offsetLeft;
                         phoNum.innerHTML = '0' + (i + 1 + 1);
@@ -87,9 +87,11 @@ function init() {
                 });
 
             }
+            });
 
-        });
-    }
+        }
+    
+
     photoSlide('.a', '.pho', '.pho_display div', '.pho_vdo', '.pho_num_1');
     photoSlide('.b', '.video', '.vdo_display div', '.pho_vdo', '.vdo_num_1');
 

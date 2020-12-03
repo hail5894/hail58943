@@ -92,6 +92,8 @@ header .menu-trigger {
     position: fixed;
     top: 3vw;
     right: 10vw;
+    
+    cursor: pointer;
 }
 
 header .menu-trigger span {
