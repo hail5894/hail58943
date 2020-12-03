@@ -26,7 +26,7 @@ $(function() {
     $('.cas_1').not(':first').hide();
     var idx = 0;
     var loop;
-    $('.fixing').on('mousewheel',fadeM);
+    $('.fixing').on('mousewheel DOMMouseScroll',fadeM);
     $('.fixing').on('click',fadeC);
 
     //img change
@@ -39,7 +39,7 @@ $(function() {
 
     function fadeM(e){
         $('.cas_1').eq(idx).fadeOut(700);
-        if(e.originalEvent.wheelDelta < 0){idx++;}else{idx--;}
+        if(e.originalEvent.wheelDelta < 0 || e.originalEvent.detail > 0){idx++;}else{idx--;}
         update();
         $('.cas_1').eq(idx).fadeIn(700);
       

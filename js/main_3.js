@@ -45,13 +45,14 @@ function init() {
         var move = 0;
 
         slideImg.forEach(function (el, i) {
-            el.addEventListener('mousewheel', function (e) {
-                if (e.wheelDelta < 0) {
+            el.addEventListener('mousewheel',mouseFun);
+            el.addEventListener('DOMMouseScroll',mouseFun);
+            function mouseFun(e) {
+                if (e.wheelDelta < 0 || e.detail > 0) {
                     //down 내리면(-)
                     try {
                         move = el.nextElementSibling.offsetLeft;
                         phoNum.innerHTML = '0' + (i + 1 + 1);
-
                     } catch {
                         alert('마지막 사진입니다.')
                     } finally {}
@@ -65,9 +66,9 @@ function init() {
                     }
                 }
                 slide_1.style.transform = "translateX(-" + move + "px)";
+            }
 
 
-            });
 
 
             /*2.모바일 사진*/

@@ -401,7 +401,7 @@ main .video .video_1 {
 
 main .video .video_1 .vdo_name {
   position: absolute;
-  left: -2%;
+  left: -1%;
   bottom: 10%;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -422,14 +422,14 @@ main .video .video_1 .vdo_name p {
 
 main .video .video_1 .vdo_display {
   position: absolute;
-  left: 20%;
+  left: 18%;
   top: 20%;
   overflow: hidden;
 }
 
 main .video .video_1 .vdo_display div {
   position: relative;
-  width: 1000px;
+  width: 1200px;
   height: 600px;
 }
 
@@ -467,12 +467,14 @@ main .video .video_1 .pho_x {
   position: absolute;
   right: 5%;
   top: 5%;
+    
+    cursor: pointer;
 }
 
 main .video .video_1 .vdo_num {
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  bottom: 5%;
 }
 
 main .video .video_1 .vdo_num p {
@@ -516,7 +518,7 @@ main .pho .photo_1 {
 main .pho .photo_1 .pho_name {
   position: absolute;
   left: -2%;
-  bottom: 15%;
+  bottom: 10%;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
@@ -536,9 +538,9 @@ main .pho .photo_1 .pho_name p {
 
 main .pho .photo_1 .pho_display {
   position: absolute;
-  left: 20%;
+  left: 15%;
   top: 20%;
-  width: 900px;
+  width: 57%;
   height: 600px;
   margin-left: 5%;
   overflow: hidden;
@@ -592,12 +594,13 @@ main .pho .photo_1 .pho_x {
   position: absolute;
   right: 5%;
   top: 5%;
+cursor: pointer;
 }
 
 main .pho .photo_1 .pho_num {
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  bottom: 5%;
 }
 
 main .pho .photo_1 .pho_num p {
@@ -807,8 +810,8 @@ main .video .video_1 .vdo_display .btn_2_1 img{
     main .video .video_1 .vdo_name{left: 0;top: 5%; transform: rotate(0deg);}
     main .video .video_1 .vdo_display{
         width: 95%;
-        left: 0;
-        top: 258%;
+        left: 2%;
+        top: 25%;
         height: 400px;
         margin-left: 0;
     }
