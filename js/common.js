@@ -22,7 +22,6 @@ function init() {
  /*2*/
     var asideEl = document.querySelector('.btn');
     var asideTop = asideEl.offsetTop;
-
     asideEl.addEventListener('click',function(){
         
         window.scrollTo({
@@ -34,17 +33,18 @@ function init() {
         
     });
   
-
-    
 }
 
 window.addEventListener('DOMContentLoaded', init);
 
 
 $(function ()  {
-
     var $spotHeight =  $('svg, .who_top').offset().top;
     var top;
+    
+    $(window).on('scroll',nav);
+    
+    
     function nav(){
         top = $(window).scrollTop();
         if(top > $spotHeight){
@@ -57,7 +57,6 @@ $(function ()  {
         
         }
     }
-    $(window).on('scroll',nav);
     setTimeout(function(){
     $('.nav ul').children('li').on('mouseover',function(){
        $('.nav ul').children('li').removeClass('active');   

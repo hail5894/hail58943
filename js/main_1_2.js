@@ -1,50 +1,28 @@
-// function init() {
-//     //first
-//     var main = document.querySelector('.casting');
-   
-//     var slide_1 = document.querySelector('.fixing');
-//     var slideImg = slide_1.querySelectorAll('.cas_1');
-
-
-//     var move = 0;
-
-//     slideImg.forEach(function (el, i) {
-//         el.addEventListener('mousewheel', function (e) {
-
-//             if (e.wheelDelta < 0) {
-//                //down 내리면(-)
-//                 try {
-//                     move = el.nextElementSibling.offsetLeft;
-                 
-//                 } catch {
-//                     alert('마지막 사진입니다.')
-//                 } finally {}
-//             } else {
-//                 //up 올리면 (+)
-//                 try {
-//                     move = el.previousElementSibling.offsetLeft;
-                 
-//                 } catch {
-//                     alert('이전 사진이 없습니다.')
-//                 }
-//             }
-//             slide_1.style.transform = "translateX(-" + move + "px)";
-
-//         });
-//     });
-
-
-
-
-//     //end 
-// }
-
-// window.addEventListener('DOMContentLoaded', init);
 
 
 $(function() {
     //start
 
+    $('header').load('inc_head_foot.html header .head',menu_1);
+    $('footer').load('inc_head_foot.html footer .footer');
+    
+    
+    function menu_1(e){
+    $('.menu-trigger').on('click',function(){
+        $(this).toggleClass('active');
+        $('nav').toggleClass('active');
+    });
+        
+    }
+    setTimeout(function(){
+    $('.nav ul').children('li').on('mouseover',function(){
+       $('.nav ul').children('li').removeClass('active');   
+       $(this).addClass('active');   
+    }); 
+    },20);
+    
+    
+    //사진 fade
     $('.cas_1').not(':first').hide();
     var idx = 0;
     var loop;
@@ -58,12 +36,6 @@ $(function() {
         update();
         $('.cas_1').eq(idx).fadeIn(700);
     }    
-
-
-
-   
-    
-   
 
     function fadeM(e){
         $('.cas_1').eq(idx).fadeOut(700);
@@ -89,13 +61,6 @@ $(function() {
     
     
     //prev,next click event
-   
-    
 
-    
-    
-   
-    
-    
     //end
 });
