@@ -468,10 +468,11 @@ main .bt .btn img {
 main .side_le {
   position: fixed;
   z-index: 2;
-  top: calc(90px + 90 * ((100vw - 320px) / 1600));
-  opacity: 1;
-  /*right: calc(25px + 55 * ((100vw - 320px) / 1600));*/
+  top: calc(90px + 90 * ((100vw - 320px) / 1600));  
+    right: -100px;
+    
    transition: .5s;
+ 
 }
 
 main .side_le .side_le_1 {
@@ -501,6 +502,7 @@ main .side_le .side_le_2 {
   width: 1px;
   height: 220px;
   background-color: rgba(102, 102, 102, 0.5);
+ 
 }
 
 main .side_le .side_le_2 span {

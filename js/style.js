@@ -29,7 +29,7 @@ $(function () {
 
         /* 2. 스크롤 내리고 올리기*/
 
-        if (e.originalEvent.wheelDelta < 0) {
+        if (e.originalEvent.wheelDelta < 0 || e.originalEvent.detail > 0) {
             if (i <= -1) {
                 i += 2;
             } else {
@@ -55,7 +55,7 @@ $(function () {
         });
 
     }
-    $(window).on('mousewheel', nav);
+    $(window).on('mousewheel DOMMouseScroll', nav);
 
 });
 

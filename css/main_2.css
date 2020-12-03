@@ -491,8 +491,8 @@ main .side_le {
   position: fixed;
   z-index: 2;
   top: calc(90px + 90 * ((100vw - 320px) / 1600));
-  opacity: 1;
-  -webkit-transition: .5s;
+  right: -100px;
+  transition: .5s;
 
   /* right: calc(25px + 55 * ((100vw - 320px) / 1600)); */
 }
