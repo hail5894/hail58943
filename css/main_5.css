@@ -262,8 +262,6 @@ main .view .view_1 div i {
     width: 28px;
     height: 28px;
     display: inline-block;
-    
-    cursor: pointer;
 }
 
 main .view .view_1 div i.active {

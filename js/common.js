@@ -58,7 +58,15 @@ $(function ()  {
         }
     }
     $(window).on('scroll',nav);
+    setTimeout(function(){
+    $('.nav ul').children('li').on('mouseover',function(){
+       $('.nav ul').children('li').removeClass('active');   
+       $(this).addClass('active');   
+    }); 
+    },50);
 
-
+    
+    
+    
 
 });
