@@ -62,7 +62,7 @@ $(function ()  {
        $('.nav ul').children('li').removeClass('active');   
        $(this).addClass('active');   
     }); 
-    },20);
+    },10);
 
     
     
